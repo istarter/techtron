@@ -216,7 +216,7 @@ const Header = (props) => {
             component={Link}
             to={route.link}
             label={route.name}
-            ariaOwns={route.ariaOwns}
+            ariaowns={route.ariaOwns}
             aria-haspopup={route.ariaPopup}
             onMouseOver={route.mouseOver}
           />
