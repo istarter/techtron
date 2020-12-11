@@ -142,9 +142,9 @@ export default function LandingPage(props) {
 
   return (
     <Grid container direction="column" className={classes.mainContainer}>
+      {/*-----Hero Block-----*/}
       <Grid item>
         {" "}
-        {/*-----Hero Block-----*/}
         <Grid container justify="flex-end" alignItems="center" direction="row">
           <Grid sm item className={classes.heroTextContainer}>
             <Typography variant="h2" align="center">
@@ -191,9 +191,10 @@ export default function LandingPage(props) {
           </Grid>
         </Grid>
       </Grid>
+
+      {/*-----Custom Software Block-----*/}
       <Grid item>
         {" "}
-        {/*-----Custom Software Block-----*/}
         <Grid
           container
           direction="row"
@@ -242,9 +243,10 @@ export default function LandingPage(props) {
           </Grid>
         </Grid>
       </Grid>
+
+      {/*-----iOS/Android Block-----*/}
       <Grid item>
         {" "}
-        {/*-----iOS/Android Block-----*/}
         <Grid
           container
           direction="row"
@@ -292,9 +294,10 @@ export default function LandingPage(props) {
           </Grid>
         </Grid>
       </Grid>
+
+      {/*-----Websites Block-----*/}
       <Grid item>
         {" "}
-        {/*-----Websites Block-----*/}
         <Grid
           container
           direction="row"
@@ -342,8 +345,9 @@ export default function LandingPage(props) {
           </Grid>
         </Grid>
       </Grid>
+
+      {/*-----The Revolution Block-----*/}
       <Grid item>
-        {/*-----The Revolution Block-----*/}
         <Grid
           container
           style={{ height: "100em", marginTop: "12em" }}
@@ -388,8 +392,9 @@ export default function LandingPage(props) {
           <div className={classes.revolutionBackground} />
         </Grid>
       </Grid>
+
+      {/*-----Information Block-----*/}
       <Grid item>
-        {/*-----Information Block-----*/}
         <Grid
           container
           style={{ height: "80em" }}
@@ -470,8 +475,9 @@ export default function LandingPage(props) {
           </Grid>
         </Grid>
       </Grid>
+
+      {/*-----Call To Action Block-----*/}
       <Grid item>
-        {/*-----Call To Action Block-----*/}
         <CallToAction setValue={props.setValue} />
       </Grid>
     </Grid>
