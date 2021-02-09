@@ -6,7 +6,7 @@ import Header from "./ui/Header";
 import Footer from "./ui/Footer";
 import LandingPage from "./LandingPage";
 import Services from "./Services";
-import customsoftware from "./CustomSoftware";
+import Customsoftware from "./CustomSoftware";
 
 function App() {
   const [selectedIndex, setSelectedIndex] = useState(0);
@@ -47,7 +47,7 @@ function App() {
             exact
             path="/customsoftware"
             render={(props) => (
-              <Services
+              <Customsoftware
                 {...props}
                 setValue={setValue}
                 setSelectedIndex={setSelectedIndex}
