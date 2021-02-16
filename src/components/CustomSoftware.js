@@ -95,6 +95,7 @@ export default function CustomSoftware(props) {
         className={classes.rowContainer}
         style={{ marginTop: matchesXS ? "1em" : "2em" }}
       >
+        {/* Hidden on medium screen */}
         <Hidden mdDown>
           <Grid
             item
@@ -111,6 +112,8 @@ export default function CustomSoftware(props) {
             </IconButton>
           </Grid>
         </Hidden>
+        {/* close Hidden on medium screen */}
+
         <Grid item container direction="column" className={classes.heading}>
           <Grid item>
             <Typography align={matchesMD ? "center" : undefined} variant="h2">
