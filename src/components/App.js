@@ -7,6 +7,8 @@ import Footer from "./ui/Footer";
 import LandingPage from "./LandingPage";
 import Services from "./Services";
 import Customsoftware from "./CustomSoftware";
+import MobileApps from "./MobileApps";
+import Revolution from "./Revolution";
 
 function App() {
   const [selectedIndex, setSelectedIndex] = useState(0);
@@ -57,13 +59,26 @@ function App() {
           <Route
             exact
             path="/mobileapps"
-            component={() => <div>Mobile Apps</div>}
+            render={(props) => (
+              <MobileApps
+                {...props}
+                setValue={setValue}
+                setSelectedIndex={setSelectedIndex}
+              />
+            )}
           />
+
           <Route exact path="/websites" component={() => <div>Websites</div>} />
           <Route
             exact
             path="/revolution"
-            component={() => <div>Revolution</div>}
+            render={(props) => (
+              <Revolution
+                {...props}
+                setValue={setValue}
+                setSelectedIndex={setSelectedIndex}
+              />
+            )}
           />
           <Route exact path="/about" component={() => <div>About</div>} />
           <Route exact path="/contact" component={() => <div>Contact</div>} />
