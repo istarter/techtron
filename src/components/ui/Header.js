@@ -19,6 +19,7 @@ import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
 import ListItemIcon from "@material-ui/core/ListItemIcon";
 import ListItemText from "@material-ui/core/ListItemText";
+import { Typography } from "@material-ui/core";
 
 function ElevationScroll(props) {
   const { children } = props;
@@ -344,7 +345,7 @@ const Header = (props) => {
               onClick={() => props.setValue(0)}
               disableRipple
             >
-              <img src={logo} alt="company logo" className={classes.logo} />
+              {/* <img src={logo} alt="company logo" className={classes.logo} /> */}
             </Button>
             {matches ? drawer : tabs}
           </Toolbar>
