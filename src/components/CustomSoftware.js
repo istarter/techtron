@@ -22,6 +22,7 @@ import uxAnimation from "../animations/uxAnimation/data";
 
 import CallToAction from "./ui/CallToAction";
 
+// Styles 
 const useStyles = makeStyles((theme) => ({
   heading: {
     maxWidth: "40em",
